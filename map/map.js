@@ -24,6 +24,10 @@ for (let quest of questData) {
 
     a.textContent = quest.title;
     a.href = `../quest/?id=${quest.id}`;
+    li.style.left = quest.map.left;
+    li.style.top = quest.map.top;
+    li.style.right = quest.map.right;
+    li.style.bottom = quest.map.bottom;
 
     li.append(a);
     ul.append(li);
