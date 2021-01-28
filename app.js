@@ -1,7 +1,7 @@
 // import functions and grab DOM elements
 const form = document.querySelector('form');
 
-form.addEventListener.apply('submit', (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const formData = new FormData(form);

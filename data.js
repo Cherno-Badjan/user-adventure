@@ -7,7 +7,7 @@ const forest = {
         top: '50%',
         left: '44%'
     },
-    image: 'forest.jpg',
+    image: 'forest.PNG',
     description: `The Forbidden Forest, also known as the Dark Forest. It  borders the edges of the Hogwarts School of Witchcraft and Wizardry grounds.The forest is a very old place that holds many secrets and houses many creatures, some dark and dangerous, others friendly. The trees in the forest are considered ancient, they are dense and rough looking from years of exposure to the elements.`,
     choices: [{
         id: 'explore',
@@ -37,7 +37,7 @@ const castle = {
         top: '50%',
         left: '44%'
     },
-    image: 'castle.jpg',
+    image: 'castle.PNG',
     description: `Hogwarts Castle is a large, seven-storey high building supported by magic, with a hundred and forty two staircases throughout its many towers and turrets and very deep dungeons. The castle was built in the late Early Middle Ages (c. 993) by a wizard architect and the four most celebrated wizards of the age: Godric Gryffindor, Helga Hufflepuff, Rowena Ravenclaw and Salazar Slytherin. The castle was the main building of Hogwarts School of Witchcraft and Wizardry, regarded as the finest wizarding school in the world.`,
     choices: [{
         id: 'gryffindor',
@@ -67,7 +67,7 @@ const grounds = {
         top: '50%',
         left: '44%'
     },
-    image: 'lake.jpg',
+    image: 'grounds.PNG',
     description: `The Great Lake (alternatively known as the Black Lake) is a large body of water, freshwater and landlocked, located to the south of Hogwarts Castle. It is about half a mile in diameter and the castle's plumbing network drains into it. It is home to many creatures and the most fascinating of them all are the Merpeople`,
     choices: [{
         id: 'merpeople',

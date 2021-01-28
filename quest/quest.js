@@ -1,8 +1,9 @@
+
 import { findById } from '../utils.js';
-import { quests } from '../data.js';
+import quests from '../data.js';
 const h1 = document.querySelector('h1');
 const p = document.querySelector('p');
-const img = document.querySelector('img');
+const img = document.querySelector('section img');
 const form = document.querySelector('form');
 
 const params = new URLSearchParams(window.location.search);
@@ -25,7 +26,7 @@ for (let choice of quest.choices) {
     span.textContent = choice.description;
 
     radio.type = 'radio';
-    radio.value = 'choice.id';
+    radio.value = choice.id;
     radio.name = 'choices';
 
     label.append(span, radio);
@@ -35,7 +36,7 @@ for (let choice of quest.choices) {
 
 const button = document.createElement('button');
 
-button.textContent = 'I solemnly swear I am up to no good';
+button.textContent = 'Submit';
 
 form.appendChild(button);
 

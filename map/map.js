@@ -1,8 +1,8 @@
 import questData from '../data.js';
-import { getUserData } from '../localStorageUtils.js';
+//import { getUserData } from '../localStorageUtils.js';
 const ul = document.querySelector('ul');
 
-const user = getUserData()
+const user = JSON.parse(localStorage.getItem('USER'));
 
 let completedAllQuests = true;
 

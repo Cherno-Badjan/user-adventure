@@ -1,6 +1,6 @@
 const USERSTATS = 'USERSTATS';
 export function getUserData() {
-    let stats = JSON.parse(localStorage.getItem());
+    let stats = JSON.parse(localStorage.getItem(USERSTATS));
 
     if (!stats) {
         stats = [];
