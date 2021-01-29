@@ -14,4 +14,9 @@ img{
     justify-content: center;
     align-self: center;
 }
+
+header{
+    display:block;
+    justify-content: center;
+}
  

@@ -1,8 +1,8 @@
 export function scoreGalleons(galleons) {
     if (galleons === 0) {
-        return 'Dobby Poor';
+        return 'poor';
     } else if (galleons < 100) {
-        return 'Weasley Poor';
+        return 'modest';
     }
-    return 'Malfoy Rich!';
+    return 'rich';
 }

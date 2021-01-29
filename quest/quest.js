@@ -5,6 +5,10 @@ const h1 = document.querySelector('h1');
 const p = document.querySelector('p');
 const img = document.querySelector('section img');
 const form = document.querySelector('form');
+const resultsSpan = document.querySelector('#results-span');
+const backHome = document.querySelector('#back-home');
+const healthSpan = document.getElementById('health-stats');
+const galleonsSpan = document.getElementById('galleons-stats');
 
 const params = new URLSearchParams(window.location.search);
 
@@ -15,6 +19,8 @@ const quest = findById(quests, questId);
 h1.textContent = quest.title;
 p.textContent = quest.description;
 img.src = `../assets/${quest.image}`;
+
+
 
 
 
@@ -53,9 +59,20 @@ form.addEventListener('submit', (e) => {
     user.health += choice.health;
     user.galleons += choice.galleons;
 
+    resultsSpan.textContent = choice.result;
     user.completed[questId] = true;
+
+    healthSpan.textContent = `Health:${user.health}`;
+    galleonsSpan.textContent = `Galleons: ${user.galleons}`;
+    button.disabled = true;
+
+
 
     localStorage.setItem('USER', JSON.stringify(user));
 
+
+});
+
+backHome.addEventListener('click', () => {
     window.location = '../map';
 });

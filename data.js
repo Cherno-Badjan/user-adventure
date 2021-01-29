@@ -18,13 +18,13 @@ const forest = {
     }, {
         id: 'Aragog',
         description: `Attack Aragog's Den!`,
-        result: `Wand at the ready, you go straight for the Giant Spider's nest and try to stun him and his many descendants. Rumour has it there are rubies under his nest worth 500 galleons. If you succeed, you need to help from Mundungus Fletcher to sell the rubies and a trip to Gringotts to save your Galleons. Your health will take a hit though. 50 points!`,
+        result: `Wand at the ready, you go straight for the Giant Spider's nest and try to stun him and his many descendants. Rumour has it there are rubies under his nest worth 500 Galleons. If you succeed, you'll need to help from Mundungus Fletcher to sell the rubies and a trip to Gringotts to save your Galleons. Your health will take a hit though. 50 points!`,
         health: -50,
         galleons: 500,
     }, {
         id: 'Hagrid',
         description: `Forget the forest.Visit Hagrid!`,
-        result: `Hang out with Hagrid and Fang. 'Enjoy' some of his barely edible rock cakes and listen to him drone on about dragons and hippogriffs. You walk away with no galleons and your health takes a little ding (10) takes to the rock cakes`,
+        result: `Hang out with Hagrid and Fang. 'Enjoy' some of his barely edible rock cakes and listen to him drone on about dragons and hippogriffs. You walk away with no galleons and your health takes a little ding (10) thanks to the rock cakes`,
         health: -10,
         galleons: 0,
     }]
@@ -48,7 +48,7 @@ const castle = {
     }, {
         id: 'chamber',
         description: `The Chamber Of Secrets`,
-        result: `Merlins beard!!! You did nto listen to Moaning Myrtle's pleas to not go down the sink. You faced the basilisk and with the help of Fawkes, killed the beast. Massive blow to your health but the reward for killing the giant serpent is 1000 Galleons `,
+        result: `Merlins beard!!! You did not listen to Moaning Myrtle's pleas to not go down the sink. You faced the basilisk and with the help of Fawkes, killed the beast. Massive blow to your health (-100) but the reward for killing the giant serpent is 1000 Galleons `,
         health: -100,
         galleons: 1000,
     }, {
@@ -72,7 +72,7 @@ const grounds = {
     choices: [{
         id: 'merpeople',
         description: 'Swim to the Merpeople Village',
-        result: `Clap for yourself. You don't speak Mermish, you did not carry any Gillyweed but you decided to venture into the freezing waters and explore the Merpeople village. What is your problem mate? Health is down 50!`,
+        result: `Clap for yourself. You don't speak Mermish, you did not carry any Gillyweed but you decided to venture into the freezing waters and explore the Merpeople village. Health is down 50!`,
         health: -50,
         galleons: 0
     }, {
