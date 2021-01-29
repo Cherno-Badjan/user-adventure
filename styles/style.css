@@ -14,7 +14,7 @@ body {
     --color5: hsla(224, 40%, 79%, 1); */
     
     background: url("/assets/marauders.PNG") no-repeat center center/cover;
-    color: #fff;
+    color: rgb(92, 5, 5);
     height: 100vh;
     width: 100%;    
     overflow: hidden;
